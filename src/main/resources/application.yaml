@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: webservice
+  thymeleaf:
+    suffix: .html
+    cache: false
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+    prefix: classpath:/templates/
+    check-template-location: true
