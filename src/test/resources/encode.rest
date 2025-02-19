@@ -1,0 +1,9 @@
+###
+GET http://localhost:8080/sqids/encode/1
+
+###
+GET http://localhost:8080/sqids/encode/100000
+
+###
+GET http://localhost:8080/sqids/decode/cV0xuR35
+
