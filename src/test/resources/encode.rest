@@ -9,3 +9,18 @@ GET http://localhost:8080/sqids/decode/cV0xuR35
 
 ###
 GET http://localhost:8080/sqids/batch/100
+
+###
+GET http://localhost:8080/api/
+
+###
+GET http://localhost:8080/api/sqids/encode/1
+
+###
+GET http://localhost:8080/api/sqids/encode/100000
+
+###
+GET http://localhost:8080/api/sqids/decode/cV0xuR35
+
+###
+GET http://localhost:8080/api/sqids/batch/100

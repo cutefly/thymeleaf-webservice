@@ -13,8 +13,11 @@ import lombok.extern.slf4j.Slf4j;
 @Controller
 public class HashController {
 
-    @Autowired
-    HashService hashService;
+    private final HashService hashService;
+
+    public HashController(HashService hashService) {
+        this.hashService = hashService;
+    }
 
     @GetMapping("/")
     public String hello() {
