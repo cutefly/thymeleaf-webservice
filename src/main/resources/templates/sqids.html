@@ -8,5 +8,6 @@
         <h1>Sqids</h1>
         <h5 th:if="${action}=='encode'"><span th:text="${sequence}"></span> <=> <span th:text="${id}"></span></h5>
         <h5 th:if="${action}=='decode'"><span th:text="${id}"></span> <=> <span th:text="${sequence}"></span></h5>
+        <h5 th:if="${action}=='batch'"><span th:text="${sequence}"></span></h5>
     </body>
     </html>

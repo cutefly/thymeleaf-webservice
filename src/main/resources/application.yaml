@@ -9,3 +9,8 @@ spring:
     content-type: text/html
     prefix: classpath:/templates/
     check-template-location: true
+# Hashids
+custom:
+  sqids:
+    alphabet: vPQ0MdX1YSu7nkU5WJDzRwGEqFxcZAjB3KgNoiTV6lm294bCIpOthyHa8sLref
+    min-length: 8

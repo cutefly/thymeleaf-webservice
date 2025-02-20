@@ -13,6 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 @Controller
 public class HashController {
 
+    @Autowired
     HashService hashService;
 
     @GetMapping("/")
@@ -39,4 +40,14 @@ public class HashController {
 
         return "sqids";
     }
+
+    @GetMapping("/sqids/batch/{sequence}")
+    public String batch(@PathVariable("sequence") Long maxSequence, Model model) {
+        Long sequence = hashService.batch(maxSequence);
+        model.addAttribute("action", "batch");
+        model.addAttribute("sequence", sequence);
+
+        return "sqids";
+    }
+
 }
