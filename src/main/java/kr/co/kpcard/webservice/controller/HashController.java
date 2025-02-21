@@ -1,11 +1,13 @@
 package kr.co.kpcard.webservice.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import kr.co.kpcard.webservice.model.HashVO;
 import kr.co.kpcard.webservice.service.HashService;
 import lombok.extern.slf4j.Slf4j;
 
@@ -46,9 +48,9 @@ public class HashController {
 
     @GetMapping("/sqids/batch/{sequence}")
     public String batch(@PathVariable("sequence") Long maxSequence, Model model) {
-        Long sequence = hashService.batch(maxSequence);
+        List<HashVO> list = hashService.batch(maxSequence);
         model.addAttribute("action", "batch");
-        model.addAttribute("sequence", sequence);
+        model.addAttribute("list", list);
 
         return "sqids";
     }
