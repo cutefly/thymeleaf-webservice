@@ -20,7 +20,22 @@ GET http://localhost:8080/api/sqids/encode/1
 GET http://localhost:8080/api/sqids/encode/100000
 
 ###
-GET http://localhost:8080/api/sqids/decode/cV0xuR35
+GET http://localhost:8080/api/sqids/decode/qDZWsLyR
 
 ###
 GET http://localhost:8080/api/sqids/batch/100
+
+### return String
+GET http://localhost:8080/bitly/string/qDZWsLyR
+
+### return ModelAndView
+GET http://localhost:8080/bitly/modelview/qDZWsLyR
+
+### httpServletResponse.sendRedirect
+GET http://localhost:8080/bitly/sendredirect/qDZWsLyR
+
+### return redirectView
+GET http://localhost:8080/bitly/redirectview/qDZWsLyR
+
+### httpHeaders
+GET http://localhost:8080/bitly/httpheaders/qDZWsLyR
