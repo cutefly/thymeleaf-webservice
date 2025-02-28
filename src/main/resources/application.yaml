@@ -12,5 +12,6 @@ spring:
 # Hashids
 custom:
   sqids:
-    alphabet: vPQ0MdX1YSu7nkU5WJDzRwGEqFxcZAjB3KgNoiTV6lm294bCIpOthyHa8sLref
+    # alphabet: vPQ0MdX1YSu7nkU5WJDzRwGEqFxcZAjB3KgNoiTV6lm294bCIpOthyHa8sLref
+    alphabet: vPQ0MdX1YSu7nkU5WJDzRwGEqFxcZAjB3KgNoiTV6m294bCpthyHa8sLref
     min-length: 8
