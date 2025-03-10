@@ -1,5 +1,9 @@
 # thymeleaf-webservice
 
+## thymelaef template 활용 절차
+
+> https://lifere.tistory.com/entry/Spring-Boot-Thymeleaf-%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84-%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95-%EB%B0%8F-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0
+
 ## HashId 생성 시 제외할 문자열
 
 문자 혼동을 방지하기 위해 제외해야 할 영문자와 숫자는 다음과 같습니다.
@@ -29,3 +33,9 @@
 - 8 대신 X를 사용할 수 있음
 
 이렇게 하면 사람이 읽을 때도 직관적이고 오류가 줄어드는 유니크한 문자열을 만들 수 있습니다. 😊
+
+## Shorten URL
+
+### Spring boot를 이용한 다양한 리다이렉트 방안
+
+> https://jmlim.github.io/spring/2019/09/30/spring-redirect-to-an-external-url/
